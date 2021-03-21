@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html ng-app="myFirstApp">
   <head>
     <meta charset="utf-8">
-    <title>Hello Angular </title>
-  </head>
-  <body>
-    <<h1>Hello git this is cool, I am thrilled to learn this stuff. </h1>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <style>body { font-size: 1.3em; }</style>
+    <title>Name Calculator</title>
+</head>
+  <body ng-app="NameCalculator">
+    <h1>NameCalculator </h1>
     <h2></h2>
+    <div ng-controller="NameCalulatorController">
+   <input type="text"
+   ng-model= "name"
+   ng-keyup="displayNumeric();">
+    </div>
+ <div>Total Numeric value of person's name is: {{totalValue}}</div>
   </body>
 </html>
